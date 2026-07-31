@@ -1,0 +1,27 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Backend Component Diagram
+
+Container_Boundary(api,"Backend API") {
+
+Component(auth,"Authentication")
+Component(identity,"Identity")
+Component(vendor,"Vendor")
+Component(branch,"Branch")
+Component(category,"Category")
+Component(product,"Product")
+Component(order,"Order")
+Component(notification,"Notification")
+Component(admin,"Administration")
+
+}
+
+Rel(auth,identity,"Authenticates")
+Rel(order,product,"Uses")
+Rel(order,vendor,"Uses")
+Rel(product,category,"Belongs To")
+Rel(notification,order,"Triggered By")
+Rel(admin,vendor,"Approves")
+
+@enduml

@@ -1,0 +1,23 @@
+flowchart TD
+
+Scheduler[Cron Scheduler]
+
+Scheduler --> BackupJob
+
+BackupJob --> PostgreSQL[(PostgreSQL)]
+
+PostgreSQL --> Dump[Database Dump]
+
+Dump --> Compress[Compress Backup]
+
+Compress --> Encrypt[Encrypt Backup]
+
+Encrypt --> Storage[(Object Storage)]
+
+Storage --> Verify[Verify Backup]
+
+Verify --> Success{Verification Passed?}
+
+Success -- Yes --> Complete([Backup Complete])
+
+Success -- No --> Alert[Notify Operations Team]

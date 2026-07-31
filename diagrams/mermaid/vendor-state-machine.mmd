@@ -1,0 +1,23 @@
+stateDiagram-v2
+
+[*] --> Draft
+
+Draft --> PendingVerification : Submit Registration
+
+PendingVerification --> PendingApproval : Verification Complete
+
+PendingApproval --> Active : Administrator Approves
+PendingApproval --> Rejected : Administrator Rejects
+
+Active --> Suspended : Policy Violation
+Suspended --> Active : Reinstated
+
+Active --> Inactive : Vendor Request
+Inactive --> Active : Reactivated
+
+Active --> Closed : Permanently Closed
+Inactive --> Closed : Closed
+Suspended --> Closed : Closed
+
+Rejected --> [*]
+Closed --> [*]

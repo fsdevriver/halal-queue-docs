@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Halal-Queue System Context
+
+Person(customer, "Customer")
+Person(vendor, "Vendor")
+Person(admin, "Administrator")
+
+System(system, "Halal-Queue Platform")
+
+System_Ext(firebase, "Firebase Cloud Messaging")
+System_Ext(storage, "S3 / MinIO")
+
+Rel(customer, system, "Places Orders")
+Rel(vendor, system, "Manages Products")
+Rel(admin, system, "Administers Platform")
+
+Rel(system, firebase, "Push Notifications")
+Rel(system, storage, "Stores Images")
+
+@enduml

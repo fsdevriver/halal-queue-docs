@@ -1,0 +1,21 @@
+flowchart TD
+
+Vendor[Vendor Registration]
+
+Vendor --> Pending[Pending Approval]
+
+Pending --> Review{Administrator Review}
+
+Review -->|Approve| Active
+
+Review -->|Reject| Rejected
+
+Review -->|Request Changes| Revision
+
+Revision --> Vendor
+
+Active --> OpenBranch[Create Branches]
+
+OpenBranch --> SellProducts
+
+Rejected --> End([End])

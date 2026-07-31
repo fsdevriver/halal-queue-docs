@@ -1,0 +1,23 @@
+flowchart LR
+
+Request
+
+-->
+
+CacheLookup{Redis Cache}
+
+CacheLookup -- Hit --> CachedData
+
+CachedData --> Response
+
+CacheLookup -- Miss --> Database
+
+Database --> StoreCache
+
+StoreCache --> Response
+
+Response --> Client
+
+Database[(PostgreSQL)]
+
+StoreCache --> Redis[(Redis)]

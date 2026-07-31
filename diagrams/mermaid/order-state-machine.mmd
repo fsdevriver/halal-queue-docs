@@ -1,0 +1,24 @@
+stateDiagram-v2
+
+[*] --> Draft
+
+Draft --> PendingConfirmation : Submit Order
+
+PendingConfirmation --> Confirmed : Vendor Accepts
+PendingConfirmation --> Rejected : Vendor Rejects
+PendingConfirmation --> Cancelled : Customer Cancels
+
+Confirmed --> Preparing : Start Preparation
+
+Preparing --> ReadyForPickup : Preparation Complete
+
+ReadyForPickup --> PickedUp : Pickup Verified
+
+PickedUp --> Completed : Order Closed
+
+Confirmed --> Cancelled : Cancel Before Preparation
+Preparing --> Cancelled : Cancel (Policy Allows)
+
+Cancelled --> [*]
+Rejected --> [*]
+Completed --> [*]

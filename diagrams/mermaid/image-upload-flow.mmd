@@ -1,0 +1,23 @@
+sequenceDiagram
+    autonumber
+
+    actor Vendor
+
+    participant App
+    participant API
+    participant Storage
+    participant DB
+
+    Vendor->>App: Select Image
+
+    App->>API: Upload Image
+
+    API->>Storage: Store Object
+
+    Storage-->>API: Object URL
+
+    API->>DB: Save Metadata
+
+    DB-->>API: Stored
+
+    API-->>App: Upload Successful

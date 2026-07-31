@@ -1,0 +1,50 @@
+sequenceDiagram
+    autonumber
+
+    actor Vendor
+
+    participant App as Vendor App
+    participant API
+    participant Identity
+    participant VendorService
+    participant DB as PostgreSQL
+    participant Admin
+    participant Notification
+
+    Vendor->>App: Submit Registration
+
+    App->>API: POST /vendors
+
+    API->>Identity: Validate Account
+
+    Identity->>DB: Verify Identity
+
+    DB-->>Identity: Valid
+
+    API->>VendorService: Create Vendor
+
+    VendorService->>DB: Save Vendor
+
+    DB-->>VendorService: Vendor Created
+
+    VendorService->>Notification: Notify Administrators
+
+    Notification-->>Admin: Review Required
+
+    VendorService-->>API: Registration Submitted
+
+    API-->>App: 201 Created
+
+    Note over Admin: Administrator reviews application
+
+    Admin->>API: Approve Vendor
+
+    API->>VendorService: Activate Vendor
+
+    VendorService->>DB: Update Status
+
+    DB-->>VendorService: Active
+
+    VendorService->>Notification: Notify Vendor
+
+    Notification-->>Vendor: Registration Approved

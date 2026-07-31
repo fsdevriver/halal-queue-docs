@@ -1,0 +1,43 @@
+flowchart LR
+
+A[Business Event]
+
+A --> B{Notification Required?}
+
+B -- No --> Z[End]
+
+B -- Yes --> C[Create Notification]
+
+C --> D[Persist Notification]
+
+D --> E[Publish Queue Job]
+
+E --> F[BullMQ Worker]
+
+F --> G{Channel}
+
+G --> H[Push Notification]
+
+G --> I[Email]
+
+G --> J[SMS]
+
+H --> K[Firebase Cloud Messaging]
+
+I --> L[SMTP Provider]
+
+J --> M[SMS Gateway]
+
+K --> N[Mobile Device]
+
+L --> O[Inbox]
+
+M --> P[Phone]
+
+N --> Q[Delivery Status]
+
+O --> Q
+
+P --> Q
+
+Q --> R[Update Notification Record]

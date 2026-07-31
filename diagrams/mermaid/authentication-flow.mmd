@@ -1,0 +1,38 @@
+flowchart TD
+
+Start([User Opens App])
+
+Start --> Login[Enter Email & Password]
+
+Login --> API[POST /auth/login]
+
+API --> Validate{Credentials Valid?}
+
+Validate -- No --> Unauthorized[401 Unauthorized]
+Unauthorized --> Login
+
+Validate -- Yes --> Generate[Generate JWT Tokens]
+
+Generate --> Access[Access Token]
+
+Generate --> Refresh[Refresh Token]
+
+Refresh --> Store[Store Refresh Token]
+
+Store --> Response[Return Tokens]
+
+Response --> Protected[Access Protected APIs]
+
+Protected --> Expired{Access Token Expired?}
+
+Expired -- No --> Protected
+
+Expired -- Yes --> RefreshRequest[POST /auth/refresh]
+
+RefreshRequest --> VerifyRefresh{Refresh Token Valid?}
+
+VerifyRefresh -- Yes --> NewTokens[Issue New Access Token]
+
+NewTokens --> Protected
+
+VerifyRefresh -- No --> Login

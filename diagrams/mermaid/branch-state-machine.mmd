@@ -1,0 +1,17 @@
+stateDiagram-v2
+
+[*] --> Draft
+
+Draft --> PendingApproval : Submit Registration
+
+PendingApproval --> Active : Approved
+PendingApproval --> Rejected : Rejected
+
+Active --> Suspended : Administrative Action
+Suspended --> Active : Reinstated
+
+Active --> Closed : Permanently Closed
+Suspended --> Closed : Closed
+
+Rejected --> [*]
+Closed --> [*]

@@ -1,0 +1,23 @@
+flowchart TD
+
+Start([Register])
+
+Start --> Details[Enter Information]
+
+Details --> Validate{Valid Data?}
+
+Validate -- No --> Details
+
+Validate -- Yes --> CreateIdentity
+
+CreateIdentity --> SendVerification
+
+SendVerification --> Verify
+
+Verify --> Verified{Verified?}
+
+Verified -- No --> Verify
+
+Verified -- Yes --> ActiveAccount
+
+ActiveAccount --> Login

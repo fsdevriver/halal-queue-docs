@@ -1,0 +1,42 @@
+sequenceDiagram
+    autonumber
+
+    actor Customer
+
+    participant App as Customer App
+    participant API
+    participant Product
+    participant Order
+    participant DB as PostgreSQL
+    participant Queue as BullMQ
+    participant Notification
+
+    Customer->>App: Browse Products
+
+    App->>API: GET /products
+
+    API->>Product: Load Products
+    Product->>DB: Query Products
+    DB-->>Product: Product List
+
+    Product-->>API: Products
+    API-->>App: Product List
+
+    Customer->>App: Place Order
+
+    App->>API: POST /orders
+
+    API->>Order: Create Order
+
+    Order->>DB: Save Order
+    DB-->>Order: Order Saved
+
+    Order->>Queue: Publish Order Created Event
+
+    Queue->>Notification: Notify Vendor
+
+    Notification-->>Queue: Delivered
+
+    Order-->>API: Order Created
+
+    API-->>App: 201 Created

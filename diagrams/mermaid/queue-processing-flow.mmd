@@ -1,0 +1,29 @@
+flowchart TD
+
+A[Business Event]
+
+A --> B[Create Job]
+
+B --> C[BullMQ Queue]
+
+C --> D[Worker Picks Job]
+
+D --> E{Successful?}
+
+E -- Yes --> F[Update Database]
+
+F --> G[Send Notification]
+
+G --> H[Complete Job]
+
+H --> End([Done])
+
+E -- No --> Retry{Retries Remaining?}
+
+Retry -- Yes --> C
+
+Retry -- No --> Failed[Move to Failed Queue]
+
+Failed --> Alert[Create Alert]
+
+Alert --> End

@@ -1,0 +1,151 @@
+erDiagram
+
+IDENTITY {
+
+uuid id PK
+
+string email
+
+string phone
+
+string password_hash
+
+string role
+
+string status
+
+}
+
+PROFILE {
+
+uuid id PK
+
+uuid identity_id FK
+
+string first_name
+
+string last_name
+
+string avatar
+
+}
+
+VENDOR {
+
+uuid id PK
+
+uuid owner_id FK
+
+string name
+
+string status
+
+}
+
+BRANCH {
+
+uuid id PK
+
+uuid vendor_id FK
+
+string name
+
+boolean active
+
+}
+
+CATEGORY {
+
+uuid id PK
+
+string name
+
+}
+
+PRODUCT {
+
+uuid id PK
+
+uuid branch_id FK
+
+uuid category_id FK
+
+string name
+
+decimal price
+
+string status
+
+}
+
+ORDER {
+
+uuid id PK
+
+uuid customer_id FK
+
+uuid branch_id FK
+
+decimal total
+
+string status
+
+}
+
+ORDER_ITEM {
+
+uuid id PK
+
+uuid order_id FK
+
+uuid product_id FK
+
+integer quantity
+
+decimal unit_price
+
+}
+
+PICKUP {
+
+uuid id PK
+
+uuid order_id FK
+
+string code
+
+datetime expires_at
+
+}
+
+NOTIFICATION {
+
+uuid id PK
+
+uuid identity_id FK
+
+string type
+
+boolean read
+
+}
+
+IDENTITY ||--|| PROFILE : owns
+
+IDENTITY ||--o{ VENDOR : owns
+
+VENDOR ||--o{ BRANCH : contains
+
+BRANCH ||--o{ PRODUCT : offers
+
+CATEGORY ||--o{ PRODUCT : categorizes
+
+IDENTITY ||--o{ ORDER : places
+
+ORDER ||--o{ ORDER_ITEM : contains
+
+PRODUCT ||--o{ ORDER_ITEM : references
+
+ORDER ||--|| PICKUP : completes
+
+IDENTITY ||--o{ NOTIFICATION : receives

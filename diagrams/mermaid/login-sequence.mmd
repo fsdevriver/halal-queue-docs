@@ -1,0 +1,39 @@
+sequenceDiagram
+    autonumber
+
+    actor Customer
+    participant Mobile as Customer App
+    participant API as Backend API
+    participant Auth as Authentication Module
+    participant DB as PostgreSQL
+    participant Redis
+    participant JWT
+
+    Customer->>Mobile: Enter email & password
+    Mobile->>API: POST /auth/login
+
+    API->>Auth: Validate credentials
+    Auth->>DB: Find identity
+    DB-->>Auth: User record
+
+    Auth->>Auth: Verify password
+
+    alt Credentials Valid
+
+        Auth->>JWT: Generate Access Token
+        Auth->>JWT: Generate Refresh Token
+
+        Auth->>Redis: Store Refresh Token
+
+        Redis-->>Auth: OK
+
+        Auth-->>API: Authentication Success
+
+        API-->>Mobile: 200 OK + Tokens
+
+    else Invalid Credentials
+
+        Auth-->>API: Authentication Failed
+        API-->>Mobile: 401 Unauthorized
+
+    end

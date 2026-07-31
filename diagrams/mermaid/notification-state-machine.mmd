@@ -1,0 +1,21 @@
+stateDiagram-v2
+
+[*] --> Created
+
+Created --> Queued
+
+Queued --> Processing
+
+Processing --> Delivered
+
+Processing --> Failed
+
+Failed --> Retrying
+
+Retrying --> Processing
+
+Delivered --> Read
+
+Read --> Archived
+
+Archived --> [*]

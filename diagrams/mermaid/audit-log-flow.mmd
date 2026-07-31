@@ -1,0 +1,17 @@
+flowchart TD
+
+Action[User Action]
+
+Action --> API
+
+API --> BusinessLogic
+
+BusinessLogic --> AuditLog[Create Audit Entry]
+
+AuditLog --> Database[(Audit Table)]
+
+BusinessLogic --> Response
+
+Response --> User
+
+Database --> Reporting[Audit Reports]

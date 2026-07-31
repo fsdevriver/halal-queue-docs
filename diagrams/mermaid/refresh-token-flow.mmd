@@ -1,0 +1,28 @@
+sequenceDiagram
+    autonumber
+
+    participant Mobile
+    participant API
+    participant Auth
+    participant Redis
+    participant JWT
+
+    Mobile->>API: POST /auth/refresh
+
+    API->>Auth: Validate Refresh Token
+
+    Auth->>JWT: Verify Signature
+
+    JWT-->>Auth: Valid
+
+    Auth->>Redis: Check Stored Token
+
+    Redis-->>Auth: Token Found
+
+    Auth->>JWT: Generate New Access Token
+
+    JWT-->>Auth: Access Token
+
+    Auth-->>API: Authentication Success
+
+    API-->>Mobile: New Access Token

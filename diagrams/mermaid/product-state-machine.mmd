@@ -1,0 +1,19 @@
+stateDiagram-v2
+
+[*] --> Draft
+
+Draft --> Active : Publish (Standard)
+Draft --> PendingApproval : Publish (Custom Variations)
+PendingApproval --> Active : Admin Approves
+PendingApproval --> Draft : Admin Rejects
+
+Active --> OutOfStock : Inventory Depleted
+OutOfStock --> Active : Restocked
+
+Active --> Inactive : Disabled
+Inactive --> Active : Re-enabled
+
+Active --> Archived : Archived
+Inactive --> Archived : Archived
+
+Archived --> [*]

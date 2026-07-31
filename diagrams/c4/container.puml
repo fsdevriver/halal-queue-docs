@@ -1,0 +1,39 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Halal-Queue Container Diagram
+
+Person(customer, Customer)
+Person(vendor, Vendor)
+Person(admin, Administrator)
+
+System_Boundary(system,"Halal-Queue") {
+
+Container(customerApp,"Customer Mobile","Flutter")
+Container(vendorApp,"Vendor Mobile","Flutter")
+Container(adminPortal,"Admin Portal","React")
+Container(api,"Backend API","NestJS")
+Container(worker,"Queue Worker","BullMQ")
+
+ContainerDb(postgres,"PostgreSQL")
+ContainerDb(redis,"Redis")
+ContainerDb(storage,"S3 / MinIO")
+
+}
+
+Rel(customer,customerApp,"Uses")
+Rel(vendor,vendorApp,"Uses")
+Rel(admin,adminPortal,"Uses")
+
+Rel(customerApp,api,"REST")
+Rel(vendorApp,api,"REST")
+Rel(adminPortal,api,"REST")
+
+Rel(api,postgres,"SQL")
+Rel(api,redis,"Cache")
+Rel(api,storage,"Object Storage")
+
+Rel(worker,redis,"Jobs")
+Rel(worker,postgres,"Updates")
+
+@enduml

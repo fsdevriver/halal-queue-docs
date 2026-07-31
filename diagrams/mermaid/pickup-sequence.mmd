@@ -1,0 +1,61 @@
+sequenceDiagram
+    autonumber
+
+    actor Customer
+    actor VendorStaff
+
+    participant CustomerApp
+    participant VendorApp
+    participant API
+    participant OrderService
+    participant PickupService
+    participant DB as PostgreSQL
+    participant Notification
+
+    Customer->>CustomerApp: View Pickup Code
+
+    CustomerApp->>API: GET /orders/{id}/pickup
+
+    API->>PickupService: Get Pickup Details
+
+    PickupService->>DB: Load Pickup Record
+
+    DB-->>PickupService: Pickup Code
+
+    PickupService-->>API: Pickup Details
+
+    API-->>CustomerApp: Pickup Code
+
+    Customer->>VendorStaff: Present Pickup Code
+
+    VendorStaff->>VendorApp: Enter / Scan Code
+
+    VendorApp->>API: POST /pickup/verify
+
+    API->>PickupService: Verify Pickup Code
+
+    PickupService->>DB: Validate Pickup
+
+    alt Code Valid
+
+        PickupService->>OrderService: Complete Order
+
+        OrderService->>DB: Update Order Status
+
+        DB-->>OrderService: Completed
+
+        OrderService->>Notification: Notify Customer
+
+        Notification-->>CustomerApp: Order Completed
+
+        PickupService-->>API: Verification Successful
+
+        API-->>VendorApp: Pickup Confirmed
+
+    else Invalid or Expired Code
+
+        PickupService-->>API: Verification Failed
+
+        API-->>VendorApp: Invalid Pickup Code
+
+    end

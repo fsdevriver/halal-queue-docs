@@ -1,0 +1,47 @@
+sequenceDiagram
+    autonumber
+
+    actor Customer
+
+    participant App as Customer App
+    participant API
+    participant OrderService
+    participant VendorService
+    participant DB as PostgreSQL
+    participant Notification
+
+    Customer->>App: Request Order Change
+
+    App->>API: PATCH /orders/{id}
+
+    API->>OrderService: Validate Change Request
+
+    OrderService->>DB: Load Order
+
+    DB-->>OrderService: Current Order
+
+    alt Order Can Be Modified
+
+        OrderService->>VendorService: Request Approval
+
+        VendorService->>Notification: Notify Vendor
+
+        Notification-->>VendorService: Delivered
+
+        VendorService-->>OrderService: Approved
+
+        OrderService->>DB: Update Order
+
+        DB-->>OrderService: Updated
+
+        OrderService->>Notification: Notify Customer
+
+        Notification-->>App: Order Updated
+
+        API-->>App: 200 OK
+
+    else Modification Not Allowed
+
+        API-->>App: 409 Conflict
+
+    end

@@ -1,0 +1,19 @@
+stateDiagram-v2
+
+[*] --> Registered
+
+Registered --> EmailVerified
+
+EmailVerified --> Active
+
+Active --> Suspended
+
+Suspended --> Active
+
+Active --> Locked
+
+Locked --> Active
+
+Active --> Deleted
+
+Deleted --> [*]

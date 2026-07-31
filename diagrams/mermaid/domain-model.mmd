@@ -1,0 +1,80 @@
+classDiagram
+
+direction LR
+
+class Identity {
+UUID id
+String email
+String phone
+Role role
+Status status
+}
+
+class Profile {
+String firstName
+String lastName
+String avatar
+}
+
+class Vendor {
+UUID id
+VendorStatus status
+}
+
+class Branch {
+UUID id
+String name
+Boolean active
+}
+
+class Category {
+UUID id
+String name
+}
+
+class Product {
+UUID id
+String name
+Money price
+ProductStatus status
+}
+
+class Order {
+UUID id
+OrderStatus status
+Money total
+}
+
+class OrderItem {
+Integer quantity
+Money unitPrice
+}
+
+class Pickup {
+String code
+DateTime expiresAt
+}
+
+class Notification {
+UUID id
+NotificationType type
+Boolean read
+}
+
+Identity "1" --> "1" Profile
+
+Identity "1" --> "*" Vendor
+
+Vendor "1" --> "*" Branch
+
+Branch "1" --> "*" Product
+
+Category "1" --> "*" Product
+
+Identity "1" --> "*" Order
+
+Order "1" --> "*" OrderItem
+
+Order "1" --> "1" Pickup
+
+Identity "1" --> "*" Notification
