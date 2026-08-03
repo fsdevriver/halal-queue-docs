@@ -2,586 +2,618 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://halalqueue.github.io/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/UI/design/</loc>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-001-modular-monolith/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-002-nestjs-backend/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-003-flutter-mobile/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-004-postgresql/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-005-redis-bullmq/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-006-jwt-authentication/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-007-s3-object-storage/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-008-openapi-first/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-009-clean-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/adr/ADR-010-monorepo/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/01-vision/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/02-scope/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/03-goals/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/04-stakeholders/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/05-personas/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/06-user-journeys/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/08-functional-requirements/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/09-non-functional-requirements/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/10-use-cases/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/11-glossary/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/administration/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/cart/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/catalog-operations/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/catalog-structure/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/catalog-vendor-listings/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/pickup/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-operations/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/account-lifecycle/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/account-verification/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/authentication/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/authorization/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/identity/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/password-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/registration/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/authentication/session-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/delivery-channels/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/delivery-tracking/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/notification-events/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/notification-preferences/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/notifications/templates/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/cancellation/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-history/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-item/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-lifecycle/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-modification/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-numbering/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-preparation/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/order-state-machine/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/pickup/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/ordering/product-availability/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/branch-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/business-profile/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/operating-hours/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/vendor-lifecycle/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/business/07-business-rules/vendor-management/vendor-status/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/contributing/documentation-standards/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/01-local-development/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/02-code-style/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/03-git-workflow/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/04-branching-strategy/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/05-commit-convention/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/06-code-review/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/07-testing/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/08-debugging/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/09-dependency-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/10-release-process/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/11-security-checklist/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/developer-guide/12-performance-checklist/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/definition-of-done/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/development-workflow/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/feature-lifecycle/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/implementation-playbook/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/implementation-roadmap/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://halalqueue.github.io/development/release-checklist/</loc>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/diagrams/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/diagrams/c4/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/diagrams/mermaid/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/01-technology-roadmap/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/02-deprecation-policy/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/03-compatibility-matrix/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/04-supported-platforms/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/05-upgrade-guide/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/06-release-calendar/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/07-version-support-policy/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/08-documentation-governance/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/09-api-lifecycle-policy/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/engineering-governance/10-risk-register/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/01-environments/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/02-configuration/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/03-deployment/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/04-monitoring/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/05-logging/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/06-alerting/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/07-backup-recovery/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/08-disaster-recovery/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/09-maintenance/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/10-runbooks/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/11-incident-response/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/operations/12-service-level-objectives/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/adr-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/api-proposal-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/architecture-document-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/changelog-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/checklist-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/database-migration-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/design-document-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/feature-spec-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/incident-report-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/meeting-notes-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/postmortem-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/pull-request-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/release-notes-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/risk-assessment-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/runbook-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/security-review-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/project-templates/testing-strategy-template/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/01-project-structure/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/02-package-structure/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/03-clean-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/04-coding-standards/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/05-error-handling/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/06-logging-monitoring/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/07-testing-strategy/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/08-git-workflow/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/09-development-guidelines/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/10-dependency-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/11-configuration-management/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/12-performance-guidelines/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/software-architecture/13-architecture-governance/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/01-domain-model/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/02-entity-relationship-model/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/03-state-machines/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/04-sequence-diagrams/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/05-system-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/06-api-design/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/07-database-design/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/08-security-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://halalqueue.github.io/system-design/09-deployment-architecture/</loc>
-         <lastmod>2026-07-31</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
 </urlset>
