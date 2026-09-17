@@ -3722,22 +3722,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-performance-flutter" class="md-nav__link">
+  <a href="#mobile-performance-react-native" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile Performance (Flutter)
+        Mobile Performance (React Native)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mobile Performance (Flutter)">
+    <nav class="md-nav" aria-label="Mobile Performance (React Native)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ui-rendering" class="md-nav__link">
+  <a href="#ui-rendering-reconciliation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UI Rendering
+        UI Rendering &amp; Reconciliation
       
     </span>
   </a>
@@ -3745,10 +3745,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
+  <a href="#network-assets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Network
+        Network &amp; Assets
       
     </span>
   </a>
@@ -3822,6 +3822,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -4001,7 +4005,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4237,6 +4241,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6744,22 +6818,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-performance-flutter" class="md-nav__link">
+  <a href="#mobile-performance-react-native" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile Performance (Flutter)
+        Mobile Performance (React Native)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mobile Performance (Flutter)">
+    <nav class="md-nav" aria-label="Mobile Performance (React Native)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ui-rendering" class="md-nav__link">
+  <a href="#ui-rendering-reconciliation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UI Rendering
+        UI Rendering &amp; Reconciliation
       
     </span>
   </a>
@@ -6767,10 +6841,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
+  <a href="#network-assets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Network
+        Network &amp; Assets
       
     </span>
   </a>
@@ -6823,16 +6897,17 @@
 <li><strong>BullMQ</strong>: Do not perform long-running tasks synchronously in an HTTP request. Offload tasks like sending emails, generating reports, or pushing FCM notifications to background queues using BullMQ.</li>
 </ul>
 <hr />
-<h2 id="mobile-performance-flutter">Mobile Performance (Flutter)<a class="headerlink" href="#mobile-performance-flutter" title="Permanent link">&para;</a></h2>
-<h3 id="ui-rendering">UI Rendering<a class="headerlink" href="#ui-rendering" title="Permanent link">&para;</a></h3>
+<h2 id="mobile-performance-react-native">Mobile Performance (React Native)<a class="headerlink" href="#mobile-performance-react-native" title="Permanent link">&para;</a></h2>
+<h3 id="ui-rendering-reconciliation">UI Rendering &amp; Reconciliation<a class="headerlink" href="#ui-rendering-reconciliation" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Avoid <code>setState</code> in Root Widgets</strong>: Only rebuild the specific part of the widget tree that changed. Use <code>const</code> constructors heavily to prevent unnecessary widget rebuilds.</li>
-<li><strong>List Rendering</strong>: Always use <code>ListView.builder</code> for lists of unknown or large lengths to ensure elements are lazy-loaded.</li>
+<li><strong>Prevent Unnecessary Re-renders</strong>: Use <code>React.memo</code>, <code>useCallback</code>, and <code>useMemo</code> deliberately around performance-critical lists and interactive controls.</li>
+<li><strong>Virtualized Lists</strong>: Use <code>@shopify/flash-list</code> or <code>FlatList</code> with <code>windowSize</code> and <code>maxToRenderPerBatch</code> tuned. Never map arrays of unbounded items directly inside a <code>ScrollView</code>.</li>
+<li><strong>Native Driver Animations</strong>: Ensure all UI animations run on the UI thread using <code>react-native-reanimated</code> instead of blocking the JavaScript bridge thread.</li>
 </ol>
-<h3 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h3>
+<h3 id="network-assets">Network &amp; Assets<a class="headerlink" href="#network-assets" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Caching</strong>: Cache images and API responses locally where appropriate to reduce network latency and bandwidth consumption.</li>
-<li><strong>Debouncing</strong>: Debounce rapid user inputs (like search bars) to prevent spamming the backend with API requests.</li>
+<li><strong>Image Caching &amp; Prefetching</strong>: Use <code>expo-image</code> for high-performance image caching, memory management, and smooth placeholder transitions.</li>
+<li><strong>Debouncing</strong>: Debounce rapid user inputs (e.g., search queries) by 300ms to avoid unnecessary API round-trips.</li>
 </ol>
 
 

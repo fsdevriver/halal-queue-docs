@@ -3687,22 +3687,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-configuration" class="md-nav__link">
+  <a href="#admin-web-configuration-react-vite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile Configuration
+        Admin Web Configuration (React + Vite)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mobile Configuration">
+    <nav class="md-nav" aria-label="Admin Web Configuration (React + Vite)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flavors-environments" class="md-nav__link">
+  <a href="#environment-variables_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flavors / Environments
+        Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-configuration-react-native-expo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Configuration (React Native / Expo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mobile Configuration (React Native / Expo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-config-environment-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        App Config &amp; Environment Profiles
       
     </span>
   </a>
@@ -3811,6 +3839,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -3990,7 +4022,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4226,6 +4258,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6733,22 +6835,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-configuration" class="md-nav__link">
+  <a href="#admin-web-configuration-react-vite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile Configuration
+        Admin Web Configuration (React + Vite)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mobile Configuration">
+    <nav class="md-nav" aria-label="Admin Web Configuration (React + Vite)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flavors-environments" class="md-nav__link">
+  <a href="#environment-variables_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flavors / Environments
+        Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-configuration-react-native-expo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Configuration (React Native / Expo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mobile Configuration (React Native / Expo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-config-environment-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        App Config &amp; Environment Profiles
       
     </span>
   </a>
@@ -6808,11 +6938,20 @@
 - <code>JWT_SECRET</code>
 - <code>PORT</code></p>
 <hr />
-<h2 id="mobile-configuration">Mobile Configuration<a class="headerlink" href="#mobile-configuration" title="Permanent link">&para;</a></h2>
-<h3 id="flavors-environments">Flavors / Environments<a class="headerlink" href="#flavors-environments" title="Permanent link">&para;</a></h3>
-<p>The Flutter applications use flavors (environments) to manage different configurations (e.g., Dev, Staging, Prod).
-- API base URLs and environment-specific keys are compiled into the app depending on the active flavor.
-- Sensitive API keys (e.g., Google Maps) should be injected via CI/CD pipelines during the build process, rather than hardcoded in Dart files.</p>
+<h2 id="admin-web-configuration-react-vite">Admin Web Configuration (React + Vite)<a class="headerlink" href="#admin-web-configuration-react-vite" title="Permanent link">&para;</a></h2>
+<h3 id="environment-variables_1">Environment Variables<a class="headerlink" href="#environment-variables_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Environment variables exposed to client-side code must use the <code>VITE_</code> prefix (e.g., <code>VITE_API_URL</code>, <code>VITE_APP_ENV</code>).</li>
+<li>Variables are accessed safely via <code>import.meta.env.VITE_*</code>.</li>
+<li>Stored locally in <code>.env.local</code> (git-ignored) and injected via CI/CD for staging and production builds.</li>
+</ul>
+<hr />
+<h2 id="mobile-configuration-react-native-expo">Mobile Configuration (React Native / Expo)<a class="headerlink" href="#mobile-configuration-react-native-expo" title="Permanent link">&para;</a></h2>
+<h3 id="app-config-environment-profiles">App Config &amp; Environment Profiles<a class="headerlink" href="#app-config-environment-profiles" title="Permanent link">&para;</a></h3>
+<p>The React Native mobile applications use dynamic configuration (<code>app.config.ts</code> or <code>app.json</code>) along with EAS environment secrets:
+- Configuration profiles are managed for <code>development</code>, <code>staging</code>, and <code>production</code>.
+- Environment variables are accessed via <code>expo-constants</code> (<code>Constants.expoConfig.extra</code>) or <code>process.env</code>.
+- Native keys (e.g., Google Maps API keys, bundle identifiers) are securely injected through <code>app.config.ts</code> during EAS build workflows and never committed in plaintext.</p>
 
 
 

@@ -9,9 +9,9 @@ Person(admin, Administrator)
 
 System_Boundary(system,"Halal-Queue") {
 
-Container(customerApp,"Customer Mobile","Flutter")
-Container(vendorApp,"Vendor Mobile","Flutter")
-Container(adminPortal,"Admin Portal","React")
+Container(customerApp,"Customer Mobile","React Native / Expo")
+Container(vendorApp,"Vendor Mobile","React Native / Expo")
+Container(adminPortal,"Admin Portal","React / Vite")
 Container(api,"Backend API","NestJS")
 Container(worker,"Queue Worker","BullMQ")
 

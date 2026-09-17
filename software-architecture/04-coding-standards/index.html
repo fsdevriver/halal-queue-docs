@@ -3403,10 +3403,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dartflutter-mobile" class="md-nav__link">
+  <a href="#react-vite-admin-web" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dart/Flutter (Mobile)
+        React &amp; Vite (Admin Web)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-native-expo-mobile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        React Native &amp; Expo (Mobile)
       
     </span>
   </a>
@@ -3788,6 +3799,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3945,7 +3960,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4181,6 +4196,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6649,10 +6734,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dartflutter-mobile" class="md-nav__link">
+  <a href="#react-vite-admin-web" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dart/Flutter (Mobile)
+        React &amp; Vite (Admin Web)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-native-expo-mobile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        React Native &amp; Expo (Mobile)
       
     </span>
   </a>
@@ -6704,12 +6800,21 @@
 <li><strong>File Naming</strong>: Use <code>kebab-case</code> with suffixes indicating the file's role (e.g., <code>user.controller.ts</code>, <code>create-user.use-case.ts</code>).</li>
 <li><strong>Linting and Formatting</strong>: We use ESLint and Prettier. Run <code>npm run lint</code> before committing.</li>
 </ol>
-<h2 id="dartflutter-mobile">Dart/Flutter (Mobile)<a class="headerlink" href="#dartflutter-mobile" title="Permanent link">&para;</a></h2>
+<h2 id="react-vite-admin-web">React &amp; Vite (Admin Web)<a class="headerlink" href="#react-vite-admin-web" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Null Safety</strong>: All code must utilize strict sound null safety.</li>
-<li><strong>Widget Composition</strong>: Prefer creating multiple small, stateless widgets over massive <code>build</code> methods.</li>
-<li><strong>State Management</strong>: Follow the officially adopted state management solution (e.g., Riverpod or Bloc). Do not mix patterns.</li>
-<li><strong>Linting</strong>: We use standard <code>flutter analyze</code> with strict rules in <code>analysis_options.yaml</code>.</li>
+<li><strong>Component Design</strong>: Prefer functional components with hooks. Keep components focused, modular, and reusable.</li>
+<li><strong>State Management</strong>: Use TanStack Query (React Query) / SWR for server state; keep client UI state local via <code>useState</code>/<code>useReducer</code> or lightweight stores (e.g., Zustand).</li>
+<li><strong>Styling</strong>: Adhere to Tailwind CSS and Shadcn UI / Radix primitives. Avoid inline style objects.</li>
+<li><strong>Linting &amp; Formatting</strong>: Strict ESLint (<code>eslint-plugin-react-hooks</code>) and Prettier configs.</li>
+</ol>
+<hr />
+<h2 id="react-native-expo-mobile">React Native &amp; Expo (Mobile)<a class="headerlink" href="#react-native-expo-mobile" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>TypeScript &amp; Strict Typing</strong>: Strict mode enabled across all screens, hooks, and components.</li>
+<li><strong>Component Architecture</strong>: Prefer atomic, modular UI components. Avoid massive single-file screen definitions.</li>
+<li><strong>List Virtualization</strong>: Always use virtualized list components (<code>@shopify/flash-list</code> or <code>FlatList</code> with <code>getItemLayout</code>) for variable/large datasets.</li>
+<li><strong>Navigation</strong>: Use Expo Router / React Navigation with typed route parameters.</li>
+<li><strong>Linting</strong>: Standard ESLint with React Native and Expo config plugins.</li>
 </ol>
 <hr />
 <h2 id="general-principles">General Principles<a class="headerlink" href="#general-principles" title="Permanent link">&para;</a></h2>

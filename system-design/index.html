@@ -3690,6 +3690,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3847,7 +3851,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4083,6 +4087,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6677,8 +6751,8 @@
 <h1 id="technology-stack">Technology Stack<a class="headerlink" href="#technology-stack" title="Permanent link">&para;</a></h1>
 <h2 id="customer-mobile-application">Customer Mobile Application<a class="headerlink" href="#customer-mobile-application" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Flutter</li>
-<li>Material 3</li>
+<li>React Native (Expo)</li>
+<li>TypeScript</li>
 </ul>
 <p>Purpose:</p>
 <ul>
@@ -6690,8 +6764,8 @@
 <hr />
 <h2 id="vendor-mobile-application">Vendor Mobile Application<a class="headerlink" href="#vendor-mobile-application" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Flutter</li>
-<li>Material 3</li>
+<li>React Native (Expo)</li>
+<li>TypeScript</li>
 </ul>
 <p>Purpose:</p>
 <ul>
@@ -6704,7 +6778,7 @@
 <h2 id="admin-web-application">Admin Web Application<a class="headerlink" href="#admin-web-application" title="Permanent link">&para;</a></h2>
 <ul>
 <li>React</li>
-<li>Next.js</li>
+<li>Vite (Single Page Application)</li>
 <li>TypeScript</li>
 </ul>
 <p>Purpose:</p>
@@ -6787,17 +6861,17 @@
 <h1 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">&para;</a></h1>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                  +-------------------------+
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                  | Customer Mobile App     |
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                  |        Flutter          |
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                  |   React Native (Expo)   |
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                  +-----------+-------------+
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                              |
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                  +-----------+-------------+
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                  | Vendor Mobile App       |
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                  |        Flutter          |
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                  |   React Native (Expo)   |
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                  +-----------+-------------+
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                              |
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                  +-----------+-------------+
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                  | Admin Web              |
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                  | React + Next.js        |
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                  | Admin Web               |
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                  | React + Vite (SPA)      |
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                  +-----------+-------------+
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                              |
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                    HTTPS / REST + WebSocket
@@ -6955,6 +7029,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>2.1.0</td>
+<td>2026-09-04</td>
+<td>Software Architecture Team</td>
+<td>Updated for React Native (Expo) Mobile and React + Vite Admin Web</td>
+</tr>
 <tr>
 <td>2.0.0</td>
 <td>2026-07-28</td>

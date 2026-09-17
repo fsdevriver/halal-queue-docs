@@ -3687,6 +3687,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3844,7 +3848,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4080,6 +4084,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6556,8 +6630,9 @@
 <h1 id="required-software">Required Software<a class="headerlink" href="#required-software" title="Permanent link">&para;</a></h1>
 <ul>
 <li>Node.js LTS</li>
-<li>npm</li>
-<li>Flutter SDK</li>
+<li>pnpm / npm</li>
+<li>Expo CLI (<code>npx expo</code>)</li>
+<li>iOS Simulator (macOS / Xcode) or Android Emulator (Android Studio)</li>
 <li>Docker Desktop</li>
 <li>PostgreSQL</li>
 <li>Redis</li>
@@ -6566,18 +6641,28 @@
 </ul>
 <hr />
 <h1 id="running-the-backend">Running the Backend<a class="headerlink" href="#running-the-backend" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>run<span class="w"> </span>start:dev
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pnpm<span class="w"> </span>install
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pnpm<span class="w"> </span>--filter<span class="w"> </span>backend<span class="w"> </span>run<span class="w"> </span>start:dev
 </code></pre></div>
 <hr />
-<h1 id="running-flutter-apps">Running Flutter Apps<a class="headerlink" href="#running-flutter-apps" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>flutter<span class="w"> </span>pub<span class="w"> </span>get
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>flutter<span class="w"> </span>run
+<h1 id="running-the-admin-web-portal-react-vite">Running the Admin Web Portal (React + Vite)<a class="headerlink" href="#running-the-admin-web-portal-react-vite" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pnpm<span class="w"> </span>--filter<span class="w"> </span>admin-web<span class="w"> </span>run<span class="w"> </span>dev
 </code></pre></div>
+<p>Runs the Vite dev server at <code>http://localhost:5173</code>.</p>
+<hr />
+<h1 id="running-mobile-apps-react-native-expo">Running Mobile Apps (React Native / Expo)<a class="headerlink" href="#running-mobile-apps-react-native-expo" title="Permanent link">&para;</a></h1>
+<p>For Customer App:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>apps/customer-app
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>npx<span class="w"> </span>expo<span class="w"> </span>start
+</code></pre></div>
+<p>For Vendor App:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>apps/vendor-app
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>npx<span class="w"> </span>expo<span class="w"> </span>start
+</code></pre></div>
+<p>Press <code>i</code> for iOS Simulator or <code>a</code> for Android Emulator.</p>
 <hr />
 <h1 id="starting-infrastructure">Starting Infrastructure<a class="headerlink" href="#starting-infrastructure" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
 <p>Starts</p>
 <ul>

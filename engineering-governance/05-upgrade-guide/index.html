@@ -3687,6 +3687,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3844,7 +3848,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4080,6 +4084,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6679,13 +6753,15 @@
 <li>Docker image</li>
 </ul>
 <hr />
-<h1 id="flutter-upgrades">Flutter Upgrades<a class="headerlink" href="#flutter-upgrades" title="Permanent link">&para;</a></h1>
+<h1 id="react-native-expo-upgrades">React Native &amp; Expo Upgrades<a class="headerlink" href="#react-native-expo-upgrades" title="Permanent link">&para;</a></h1>
 <p>Verify:</p>
 <ul>
-<li>Android build</li>
-<li>iOS build</li>
-<li>Widget tests</li>
-<li>Integration tests</li>
+<li>Run <code>npx expo upgrade</code></li>
+<li>Verify config plugins in <code>app.config.ts</code></li>
+<li>Android build (<code>npx expo run:android</code>)</li>
+<li>iOS build (<code>npx expo run:ios</code>)</li>
+<li>Unit and component tests</li>
+<li>Integration / E2E test runs</li>
 </ul>
 <hr />
 <h1 id="rollback">Rollback<a class="headerlink" href="#rollback" title="Permanent link">&para;</a></h1>

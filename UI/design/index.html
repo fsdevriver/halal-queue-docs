@@ -3681,6 +3681,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3838,7 +3842,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4074,6 +4078,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -9165,21 +9239,23 @@ Initials are 2 characters, uppercase, white, <code>font-weight: 700</code>.</p>
 <h3 id="1-customer-app-mobile-vendor-app-ipad">1. Customer App (Mobile) &amp; Vendor App (iPad)<a class="headerlink" href="#1-customer-app-mobile-vendor-app-ipad" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Path:</strong> <code>apps/customer-app/</code> and <code>apps/vendor-app/</code></li>
-<li><strong>Framework:</strong> Flutter (Dart)</li>
+<li><strong>Framework:</strong> React Native (Expo)</li>
 <li><strong>Implementation Rules:</strong> </li>
-<li>Do not use CSS. Colors must be implemented in a Dart <code>AppColors</code> class (e.g. <code>static const Color green900 = Color(0xFF1B5C2A);</code>).</li>
-<li>Shadows use Flutter's <code>BoxShadow</code> widget instead of CSS shadows.</li>
-<li>Fonts are loaded using the <code>google_fonts</code> package in <code>pubspec.yaml</code>, not via CSS imports.</li>
-<li>Layouts use Flutter's layout widgets (<code>Column</code>, <code>Row</code>, <code>Expanded</code>, <code>SizedBox</code>) instead of CSS Grid/Flexbox.</li>
+<li>Colors are defined in a shared design token theme object (e.g. <code>colors.green900 = '#1B5C2A'</code>) or NativeWind Tailwind theme.</li>
+<li>Shadows use React Native shadow style properties / <code>elevation</code> on Android or NativeWind utility classes.</li>
+<li>Fonts are loaded using <code>expo-font</code> / <code>@expo-google-fonts</code>.</li>
+<li>Layouts use Flexbox with React Native <code>View</code>, <code>Text</code>, and virtualized list components.</li>
 </ul>
 <h3 id="2-admin-web-desktopweb">2. Admin Web (Desktop/Web)<a class="headerlink" href="#2-admin-web-desktopweb" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Path:</strong> <code>apps/admin-web/</code></li>
-<li><strong>Framework:</strong> React (Next.js)</li>
-<li><strong>Implementation Rules:</strong> </li>
-<li>Add the CSS custom properties (defined below) to <code>:root</code> inside the main stylesheet (<code>globals.css</code> or <code>index.css</code>).</li>
-<li>Fonts can be loaded via Next.js <code>next/font/google</code> or via <code>@import</code> in CSS.</li>
-<li>Follows standard React/Tailwind component structures.</li>
+<li><strong>Framework:</strong> React (Vite)</li>
+<li><strong>Responsive Approach:</strong> CSS Grid + Flexbox, Tailwind CSS</li>
+<li><strong>Typography Integration:</strong></li>
+<li>Fonts can be loaded via <code>@fontsource</code> packages or <code>@import</code> in CSS.</li>
+<li><strong>Dark Mode Strategy:</strong></li>
+<li>Applied via <code>data-theme="dark"</code> attribute on <code>&lt;html&gt;</code>.</li>
+<li>Driven by CSS custom properties. No hardcoded color swaps needed.</li>
 </ul>
 <hr />
 <h2 id="css-custom-properties-admin-web-only">CSS Custom Properties (Admin Web Only)<a class="headerlink" href="#css-custom-properties-admin-web-only" title="Permanent link">&para;</a></h2>

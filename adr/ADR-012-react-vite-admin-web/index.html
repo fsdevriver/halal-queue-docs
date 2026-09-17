@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://halalqueue.github.io/business/">
+        <link rel="canonical" href="https://halalqueue.github.io/adr/ADR-012-react-vite-admin-web/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../ADR-011-react-native-expo-mobile/">
       
       
-        <link rel="next" href="01-vision/">
+        <link rel="next" href="../../engineering-governance/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Overview - Halal-Queue Engineering Design Repository</title>
+        <title>ADR-012 React and Vite for Admin Web Portal - Halal-Queue Engineering Design Repository</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#business-documentation" class="md-skip">
+        <a href="#context" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Halal-Queue Engineering Design Repository" class="md-header__button md-logo" aria-label="Halal-Queue Engineering Design Repository" data-md-component="logo">
+    <a href="../.." title="Halal-Queue Engineering Design Repository" class="md-header__button md-logo" aria-label="Halal-Queue Engineering Design Repository" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              ADR-012 React and Vite for Admin Web Portal
             
           </span>
         </div>
@@ -190,7 +190,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -207,13 +207,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../business/" class="md-tabs__link">
           
   
   
@@ -235,7 +233,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../system-design/" class="md-tabs__link">
+        <a href="../../system-design/" class="md-tabs__link">
           
   
   
@@ -257,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../software-architecture/" class="md-tabs__link">
+        <a href="../../software-architecture/" class="md-tabs__link">
           
   
   
@@ -275,11 +273,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../adr/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -301,7 +301,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../engineering-governance/" class="md-tabs__link">
+        <a href="../../engineering-governance/" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../developer-guide/" class="md-tabs__link">
+        <a href="../../developer-guide/" class="md-tabs__link">
           
   
   
@@ -345,7 +345,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../operations/" class="md-tabs__link">
+        <a href="../../operations/" class="md-tabs__link">
           
   
   
@@ -367,7 +367,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../contributing/documentation-standards/" class="md-tabs__link">
+        <a href="../../contributing/documentation-standards/" class="md-tabs__link">
           
   
   
@@ -389,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../diagrams/" class="md-tabs__link">
+        <a href="../../diagrams/" class="md-tabs__link">
           
   
   
@@ -411,7 +411,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../project-templates/" class="md-tabs__link">
+        <a href="../../project-templates/" class="md-tabs__link">
           
   
   
@@ -453,7 +453,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Halal-Queue Engineering Design Repository" class="md-nav__button md-logo" aria-label="Halal-Queue Engineering Design Repository" data-md-component="logo">
+    <a href="../.." title="Halal-Queue Engineering Design Repository" class="md-nav__button md-logo" aria-label="Halal-Queue Engineering Design Repository" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -483,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -507,8 +507,6 @@
       
   
   
-    
-  
   
   
     
@@ -544,23 +542,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../business/" class="md-nav__link ">
               
   
   
@@ -578,13 +575,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -604,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-vision/" class="md-nav__link">
+      <a href="../../business/01-vision/" class="md-nav__link">
         
   
   
@@ -639,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-scope/" class="md-nav__link">
+      <a href="../../business/02-scope/" class="md-nav__link">
         
   
   
@@ -674,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-goals/" class="md-nav__link">
+      <a href="../../business/03-goals/" class="md-nav__link">
         
   
   
@@ -709,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-stakeholders/" class="md-nav__link">
+      <a href="../../business/04-stakeholders/" class="md-nav__link">
         
   
   
@@ -744,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-personas/" class="md-nav__link">
+      <a href="../../business/05-personas/" class="md-nav__link">
         
   
   
@@ -779,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-user-journeys/" class="md-nav__link">
+      <a href="../../business/06-user-journeys/" class="md-nav__link">
         
   
   
@@ -848,13 +845,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -864,7 +858,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="07-business-rules/" class="md-nav__link ">
+            <a href="../../business/07-business-rules/" class="md-nav__link ">
               
   
   
@@ -889,7 +883,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -915,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/administration/" class="md-nav__link">
+      <a href="../../business/07-business-rules/administration/" class="md-nav__link">
         
   
   
@@ -991,7 +985,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="07-business-rules/authentication/" class="md-nav__link ">
+            <a href="../../business/07-business-rules/authentication/" class="md-nav__link ">
               
   
   
@@ -1042,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/account-lifecycle/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/account-lifecycle/" class="md-nav__link">
         
   
   
@@ -1077,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/account-verification/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/account-verification/" class="md-nav__link">
         
   
   
@@ -1112,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/authentication/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/authentication/" class="md-nav__link">
         
   
   
@@ -1147,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/authorization/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/authorization/" class="md-nav__link">
         
   
   
@@ -1182,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/identity/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/identity/" class="md-nav__link">
         
   
   
@@ -1217,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/password-management/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/password-management/" class="md-nav__link">
         
   
   
@@ -1252,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/registration/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/registration/" class="md-nav__link">
         
   
   
@@ -1287,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/authentication/session-management/" class="md-nav__link">
+      <a href="../../business/07-business-rules/authentication/session-management/" class="md-nav__link">
         
   
   
@@ -1330,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/cart/" class="md-nav__link">
+      <a href="../../business/07-business-rules/cart/" class="md-nav__link">
         
   
   
@@ -1365,7 +1359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/catalog-operations/" class="md-nav__link">
+      <a href="../../business/07-business-rules/catalog-operations/" class="md-nav__link">
         
   
   
@@ -1400,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/catalog-structure/" class="md-nav__link">
+      <a href="../../business/07-business-rules/catalog-structure/" class="md-nav__link">
         
   
   
@@ -1435,7 +1429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/catalog-vendor-listings/" class="md-nav__link">
+      <a href="../../business/07-business-rules/catalog-vendor-listings/" class="md-nav__link">
         
   
   
@@ -1505,7 +1499,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="07-business-rules/notifications/" class="md-nav__link ">
+            <a href="../../business/07-business-rules/notifications/" class="md-nav__link ">
               
   
   
@@ -1556,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/notifications/delivery-channels/" class="md-nav__link">
+      <a href="../../business/07-business-rules/notifications/delivery-channels/" class="md-nav__link">
         
   
   
@@ -1591,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/notifications/delivery-tracking/" class="md-nav__link">
+      <a href="../../business/07-business-rules/notifications/delivery-tracking/" class="md-nav__link">
         
   
   
@@ -1626,7 +1620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/notifications/notification-events/" class="md-nav__link">
+      <a href="../../business/07-business-rules/notifications/notification-events/" class="md-nav__link">
         
   
   
@@ -1661,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/notifications/notification-preferences/" class="md-nav__link">
+      <a href="../../business/07-business-rules/notifications/notification-preferences/" class="md-nav__link">
         
   
   
@@ -1696,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/notifications/templates/" class="md-nav__link">
+      <a href="../../business/07-business-rules/notifications/templates/" class="md-nav__link">
         
   
   
@@ -1784,7 +1778,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="07-business-rules/ordering/" class="md-nav__link ">
+            <a href="../../business/07-business-rules/ordering/" class="md-nav__link ">
               
   
   
@@ -1835,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/cancellation/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/cancellation/" class="md-nav__link">
         
   
   
@@ -1870,7 +1864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-history/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-history/" class="md-nav__link">
         
   
   
@@ -1905,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-item/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-item/" class="md-nav__link">
         
   
   
@@ -1940,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-lifecycle/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-lifecycle/" class="md-nav__link">
         
   
   
@@ -1975,7 +1969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-modification/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-modification/" class="md-nav__link">
         
   
   
@@ -2010,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-numbering/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-numbering/" class="md-nav__link">
         
   
   
@@ -2045,7 +2039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-preparation/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-preparation/" class="md-nav__link">
         
   
   
@@ -2080,7 +2074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/order-state-machine/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/order-state-machine/" class="md-nav__link">
         
   
   
@@ -2115,7 +2109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/pickup/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/pickup/" class="md-nav__link">
         
   
   
@@ -2150,7 +2144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/ordering/product-availability/" class="md-nav__link">
+      <a href="../../business/07-business-rules/ordering/product-availability/" class="md-nav__link">
         
   
   
@@ -2193,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/pickup/" class="md-nav__link">
+      <a href="../../business/07-business-rules/pickup/" class="md-nav__link">
         
   
   
@@ -2263,7 +2257,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="07-business-rules/vendor-management/" class="md-nav__link ">
+            <a href="../../business/07-business-rules/vendor-management/" class="md-nav__link ">
               
   
   
@@ -2314,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-management/branch-management/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-management/branch-management/" class="md-nav__link">
         
   
   
@@ -2349,7 +2343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-management/business-profile/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-management/business-profile/" class="md-nav__link">
         
   
   
@@ -2384,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-management/operating-hours/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-management/operating-hours/" class="md-nav__link">
         
   
   
@@ -2419,7 +2413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-management/vendor-lifecycle/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-management/vendor-lifecycle/" class="md-nav__link">
         
   
   
@@ -2454,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-management/vendor-status/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-management/vendor-status/" class="md-nav__link">
         
   
   
@@ -2497,7 +2491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-business-rules/vendor-operations/" class="md-nav__link">
+      <a href="../../business/07-business-rules/vendor-operations/" class="md-nav__link">
         
   
   
@@ -2540,7 +2534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="08-functional-requirements/" class="md-nav__link">
+      <a href="../../business/08-functional-requirements/" class="md-nav__link">
         
   
   
@@ -2575,7 +2569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="09-non-functional-requirements/" class="md-nav__link">
+      <a href="../../business/09-non-functional-requirements/" class="md-nav__link">
         
   
   
@@ -2610,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="10-use-cases/" class="md-nav__link">
+      <a href="../../business/10-use-cases/" class="md-nav__link">
         
   
   
@@ -2645,7 +2639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="11-glossary/" class="md-nav__link">
+      <a href="../../business/11-glossary/" class="md-nav__link">
         
   
   
@@ -2730,7 +2724,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../system-design/" class="md-nav__link ">
+            <a href="../../system-design/" class="md-nav__link ">
               
   
   
@@ -2781,7 +2775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/01-domain-model/" class="md-nav__link">
+      <a href="../../system-design/01-domain-model/" class="md-nav__link">
         
   
   
@@ -2816,7 +2810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/02-entity-relationship-model/" class="md-nav__link">
+      <a href="../../system-design/02-entity-relationship-model/" class="md-nav__link">
         
   
   
@@ -2851,7 +2845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/03-state-machines/" class="md-nav__link">
+      <a href="../../system-design/03-state-machines/" class="md-nav__link">
         
   
   
@@ -2886,7 +2880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/04-sequence-diagrams/" class="md-nav__link">
+      <a href="../../system-design/04-sequence-diagrams/" class="md-nav__link">
         
   
   
@@ -2921,7 +2915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/05-system-architecture/" class="md-nav__link">
+      <a href="../../system-design/05-system-architecture/" class="md-nav__link">
         
   
   
@@ -2956,7 +2950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/06-api-design/" class="md-nav__link">
+      <a href="../../system-design/06-api-design/" class="md-nav__link">
         
   
   
@@ -2991,7 +2985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/07-database-design/" class="md-nav__link">
+      <a href="../../system-design/07-database-design/" class="md-nav__link">
         
   
   
@@ -3026,7 +3020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/08-security-architecture/" class="md-nav__link">
+      <a href="../../system-design/08-security-architecture/" class="md-nav__link">
         
   
   
@@ -3061,7 +3055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-design/09-deployment-architecture/" class="md-nav__link">
+      <a href="../../system-design/09-deployment-architecture/" class="md-nav__link">
         
   
   
@@ -3154,7 +3148,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../software-architecture/" class="md-nav__link ">
+            <a href="../../software-architecture/" class="md-nav__link ">
               
   
   
@@ -3205,7 +3199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/01-project-structure/" class="md-nav__link">
+      <a href="../../software-architecture/01-project-structure/" class="md-nav__link">
         
   
   
@@ -3240,7 +3234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/02-package-structure/" class="md-nav__link">
+      <a href="../../software-architecture/02-package-structure/" class="md-nav__link">
         
   
   
@@ -3275,7 +3269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/03-clean-architecture/" class="md-nav__link">
+      <a href="../../software-architecture/03-clean-architecture/" class="md-nav__link">
         
   
   
@@ -3310,7 +3304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/04-coding-standards/" class="md-nav__link">
+      <a href="../../software-architecture/04-coding-standards/" class="md-nav__link">
         
   
   
@@ -3345,7 +3339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/05-error-handling/" class="md-nav__link">
+      <a href="../../software-architecture/05-error-handling/" class="md-nav__link">
         
   
   
@@ -3380,7 +3374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/06-logging-monitoring/" class="md-nav__link">
+      <a href="../../software-architecture/06-logging-monitoring/" class="md-nav__link">
         
   
   
@@ -3415,7 +3409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/07-testing-strategy/" class="md-nav__link">
+      <a href="../../software-architecture/07-testing-strategy/" class="md-nav__link">
         
   
   
@@ -3450,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/08-git-workflow/" class="md-nav__link">
+      <a href="../../software-architecture/08-git-workflow/" class="md-nav__link">
         
   
   
@@ -3485,7 +3479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/09-development-guidelines/" class="md-nav__link">
+      <a href="../../software-architecture/09-development-guidelines/" class="md-nav__link">
         
   
   
@@ -3520,7 +3514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/10-dependency-management/" class="md-nav__link">
+      <a href="../../software-architecture/10-dependency-management/" class="md-nav__link">
         
   
   
@@ -3555,7 +3549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/11-configuration-management/" class="md-nav__link">
+      <a href="../../software-architecture/11-configuration-management/" class="md-nav__link">
         
   
   
@@ -3590,7 +3584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/12-performance-guidelines/" class="md-nav__link">
+      <a href="../../software-architecture/12-performance-guidelines/" class="md-nav__link">
         
   
   
@@ -3625,7 +3619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-architecture/13-architecture-governance/" class="md-nav__link">
+      <a href="../../software-architecture/13-architecture-governance/" class="md-nav__link">
         
   
   
@@ -3664,6 +3658,8 @@
       
   
   
+    
+  
   
   
     
@@ -3701,22 +3697,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../adr/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -3741,13 +3738,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3767,7 +3764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-001-modular-monolith/" class="md-nav__link">
+      <a href="../ADR-001-modular-monolith/" class="md-nav__link">
         
   
   
@@ -3802,7 +3799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-002-nestjs-backend/" class="md-nav__link">
+      <a href="../ADR-002-nestjs-backend/" class="md-nav__link">
         
   
   
@@ -3837,7 +3834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-003-flutter-mobile/" class="md-nav__link">
+      <a href="../ADR-003-flutter-mobile/" class="md-nav__link">
         
   
   
@@ -3872,7 +3869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-004-postgresql/" class="md-nav__link">
+      <a href="../ADR-004-postgresql/" class="md-nav__link">
         
   
   
@@ -3907,7 +3904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-005-redis-bullmq/" class="md-nav__link">
+      <a href="../ADR-005-redis-bullmq/" class="md-nav__link">
         
   
   
@@ -3942,7 +3939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-006-jwt-authentication/" class="md-nav__link">
+      <a href="../ADR-006-jwt-authentication/" class="md-nav__link">
         
   
   
@@ -3977,7 +3974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-007-s3-object-storage/" class="md-nav__link">
+      <a href="../ADR-007-s3-object-storage/" class="md-nav__link">
         
   
   
@@ -4012,7 +4009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-008-openapi-first/" class="md-nav__link">
+      <a href="../ADR-008-openapi-first/" class="md-nav__link">
         
   
   
@@ -4047,7 +4044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-009-clean-architecture/" class="md-nav__link">
+      <a href="../ADR-009-clean-architecture/" class="md-nav__link">
         
   
   
@@ -4082,7 +4079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-010-monorepo/" class="md-nav__link">
+      <a href="../ADR-010-monorepo/" class="md-nav__link">
         
   
   
@@ -4117,7 +4114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+      <a href="../ADR-011-react-native-expo-mobile/" class="md-nav__link">
         
   
   
@@ -4149,10 +4146,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4175,6 +4181,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -4239,7 +4246,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../engineering-governance/" class="md-nav__link ">
+            <a href="../../engineering-governance/" class="md-nav__link ">
               
   
   
@@ -4290,7 +4297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/01-technology-roadmap/" class="md-nav__link">
+      <a href="../../engineering-governance/01-technology-roadmap/" class="md-nav__link">
         
   
   
@@ -4318,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/02-deprecation-policy/" class="md-nav__link">
+      <a href="../../engineering-governance/02-deprecation-policy/" class="md-nav__link">
         
   
   
@@ -4346,7 +4353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/03-compatibility-matrix/" class="md-nav__link">
+      <a href="../../engineering-governance/03-compatibility-matrix/" class="md-nav__link">
         
   
   
@@ -4374,7 +4381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/04-supported-platforms/" class="md-nav__link">
+      <a href="../../engineering-governance/04-supported-platforms/" class="md-nav__link">
         
   
   
@@ -4409,7 +4416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/05-upgrade-guide/" class="md-nav__link">
+      <a href="../../engineering-governance/05-upgrade-guide/" class="md-nav__link">
         
   
   
@@ -4444,7 +4451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/06-release-calendar/" class="md-nav__link">
+      <a href="../../engineering-governance/06-release-calendar/" class="md-nav__link">
         
   
   
@@ -4479,7 +4486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/07-version-support-policy/" class="md-nav__link">
+      <a href="../../engineering-governance/07-version-support-policy/" class="md-nav__link">
         
   
   
@@ -4514,7 +4521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/08-documentation-governance/" class="md-nav__link">
+      <a href="../../engineering-governance/08-documentation-governance/" class="md-nav__link">
         
   
   
@@ -4549,7 +4556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/09-api-lifecycle-policy/" class="md-nav__link">
+      <a href="../../engineering-governance/09-api-lifecycle-policy/" class="md-nav__link">
         
   
   
@@ -4584,7 +4591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../engineering-governance/10-risk-register/" class="md-nav__link">
+      <a href="../../engineering-governance/10-risk-register/" class="md-nav__link">
         
   
   
@@ -4675,7 +4682,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../developer-guide/" class="md-nav__link ">
+            <a href="../../developer-guide/" class="md-nav__link ">
               
   
   
@@ -4726,7 +4733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/01-local-development/" class="md-nav__link">
+      <a href="../../developer-guide/01-local-development/" class="md-nav__link">
         
   
   
@@ -4754,7 +4761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/02-code-style/" class="md-nav__link">
+      <a href="../../developer-guide/02-code-style/" class="md-nav__link">
         
   
   
@@ -4782,7 +4789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/03-git-workflow/" class="md-nav__link">
+      <a href="../../developer-guide/03-git-workflow/" class="md-nav__link">
         
   
   
@@ -4810,7 +4817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/04-branching-strategy/" class="md-nav__link">
+      <a href="../../developer-guide/04-branching-strategy/" class="md-nav__link">
         
   
   
@@ -4845,7 +4852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/05-commit-convention/" class="md-nav__link">
+      <a href="../../developer-guide/05-commit-convention/" class="md-nav__link">
         
   
   
@@ -4880,7 +4887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/06-code-review/" class="md-nav__link">
+      <a href="../../developer-guide/06-code-review/" class="md-nav__link">
         
   
   
@@ -4915,7 +4922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/07-testing/" class="md-nav__link">
+      <a href="../../developer-guide/07-testing/" class="md-nav__link">
         
   
   
@@ -4950,7 +4957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/08-debugging/" class="md-nav__link">
+      <a href="../../developer-guide/08-debugging/" class="md-nav__link">
         
   
   
@@ -4985,7 +4992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/09-dependency-management/" class="md-nav__link">
+      <a href="../../developer-guide/09-dependency-management/" class="md-nav__link">
         
   
   
@@ -5020,7 +5027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/10-release-process/" class="md-nav__link">
+      <a href="../../developer-guide/10-release-process/" class="md-nav__link">
         
   
   
@@ -5055,7 +5062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/11-security-checklist/" class="md-nav__link">
+      <a href="../../developer-guide/11-security-checklist/" class="md-nav__link">
         
   
   
@@ -5090,7 +5097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-guide/12-performance-checklist/" class="md-nav__link">
+      <a href="../../developer-guide/12-performance-checklist/" class="md-nav__link">
         
   
   
@@ -5181,7 +5188,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../operations/" class="md-nav__link ">
+            <a href="../../operations/" class="md-nav__link ">
               
   
   
@@ -5232,7 +5239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/01-environments/" class="md-nav__link">
+      <a href="../../operations/01-environments/" class="md-nav__link">
         
   
   
@@ -5260,7 +5267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/02-configuration/" class="md-nav__link">
+      <a href="../../operations/02-configuration/" class="md-nav__link">
         
   
   
@@ -5288,7 +5295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/03-deployment/" class="md-nav__link">
+      <a href="../../operations/03-deployment/" class="md-nav__link">
         
   
   
@@ -5316,7 +5323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/04-monitoring/" class="md-nav__link">
+      <a href="../../operations/04-monitoring/" class="md-nav__link">
         
   
   
@@ -5351,7 +5358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/05-logging/" class="md-nav__link">
+      <a href="../../operations/05-logging/" class="md-nav__link">
         
   
   
@@ -5386,7 +5393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/06-alerting/" class="md-nav__link">
+      <a href="../../operations/06-alerting/" class="md-nav__link">
         
   
   
@@ -5421,7 +5428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/07-backup-recovery/" class="md-nav__link">
+      <a href="../../operations/07-backup-recovery/" class="md-nav__link">
         
   
   
@@ -5456,7 +5463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/08-disaster-recovery/" class="md-nav__link">
+      <a href="../../operations/08-disaster-recovery/" class="md-nav__link">
         
   
   
@@ -5491,7 +5498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/09-maintenance/" class="md-nav__link">
+      <a href="../../operations/09-maintenance/" class="md-nav__link">
         
   
   
@@ -5526,7 +5533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/10-runbooks/" class="md-nav__link">
+      <a href="../../operations/10-runbooks/" class="md-nav__link">
         
   
   
@@ -5561,7 +5568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/11-incident-response/" class="md-nav__link">
+      <a href="../../operations/11-incident-response/" class="md-nav__link">
         
   
   
@@ -5596,7 +5603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations/12-service-level-objectives/" class="md-nav__link">
+      <a href="../../operations/12-service-level-objectives/" class="md-nav__link">
         
   
   
@@ -5696,7 +5703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/documentation-standards/" class="md-nav__link">
+      <a href="../../contributing/documentation-standards/" class="md-nav__link">
         
   
   
@@ -5760,7 +5767,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../diagrams/" class="md-nav__link ">
+            <a href="../../diagrams/" class="md-nav__link ">
               
   
   
@@ -5811,7 +5818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../diagrams/c4/" class="md-nav__link">
+      <a href="../../diagrams/c4/" class="md-nav__link">
         
   
   
@@ -5839,7 +5846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../diagrams/mermaid/" class="md-nav__link">
+      <a href="../../diagrams/mermaid/" class="md-nav__link">
         
   
   
@@ -5940,7 +5947,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../project-templates/" class="md-nav__link ">
+            <a href="../../project-templates/" class="md-nav__link ">
               
   
   
@@ -5991,7 +5998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/adr-template/" class="md-nav__link">
+      <a href="../../project-templates/adr-template/" class="md-nav__link">
         
   
   
@@ -6026,7 +6033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/api-proposal-template/" class="md-nav__link">
+      <a href="../../project-templates/api-proposal-template/" class="md-nav__link">
         
   
   
@@ -6061,7 +6068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/architecture-document-template/" class="md-nav__link">
+      <a href="../../project-templates/architecture-document-template/" class="md-nav__link">
         
   
   
@@ -6096,7 +6103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/changelog-template/" class="md-nav__link">
+      <a href="../../project-templates/changelog-template/" class="md-nav__link">
         
   
   
@@ -6131,7 +6138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/checklist-template/" class="md-nav__link">
+      <a href="../../project-templates/checklist-template/" class="md-nav__link">
         
   
   
@@ -6166,7 +6173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/database-migration-template/" class="md-nav__link">
+      <a href="../../project-templates/database-migration-template/" class="md-nav__link">
         
   
   
@@ -6201,7 +6208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/design-document-template/" class="md-nav__link">
+      <a href="../../project-templates/design-document-template/" class="md-nav__link">
         
   
   
@@ -6236,7 +6243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/feature-spec-template/" class="md-nav__link">
+      <a href="../../project-templates/feature-spec-template/" class="md-nav__link">
         
   
   
@@ -6271,7 +6278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/incident-report-template/" class="md-nav__link">
+      <a href="../../project-templates/incident-report-template/" class="md-nav__link">
         
   
   
@@ -6306,7 +6313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/meeting-notes-template/" class="md-nav__link">
+      <a href="../../project-templates/meeting-notes-template/" class="md-nav__link">
         
   
   
@@ -6341,7 +6348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/postmortem-template/" class="md-nav__link">
+      <a href="../../project-templates/postmortem-template/" class="md-nav__link">
         
   
   
@@ -6376,7 +6383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/pull-request-template/" class="md-nav__link">
+      <a href="../../project-templates/pull-request-template/" class="md-nav__link">
         
   
   
@@ -6404,7 +6411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/release-notes-template/" class="md-nav__link">
+      <a href="../../project-templates/release-notes-template/" class="md-nav__link">
         
   
   
@@ -6439,7 +6446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/risk-assessment-template/" class="md-nav__link">
+      <a href="../../project-templates/risk-assessment-template/" class="md-nav__link">
         
   
   
@@ -6474,7 +6481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/runbook-template/" class="md-nav__link">
+      <a href="../../project-templates/runbook-template/" class="md-nav__link">
         
   
   
@@ -6509,7 +6516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/security-review-template/" class="md-nav__link">
+      <a href="../../project-templates/security-review-template/" class="md-nav__link">
         
   
   
@@ -6544,7 +6551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-templates/testing-strategy-template/" class="md-nav__link">
+      <a href="../../project-templates/testing-strategy-template/" class="md-nav__link">
         
   
   
@@ -6599,69 +6606,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Purpose
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Documents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-business-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Using Business Documentation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source-of-truth" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source of Truth
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Documentation
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -6680,109 +6624,55 @@
   
 
 
-<h1 id="business-documentation">Business Documentation<a class="headerlink" href="#business-documentation" title="Permanent link">&para;</a></h1>
-<p>This directory contains the authoritative business and domain documentation for the application.</p>
-<p>Business rules defined here must not be inferred, duplicated, or reimplemented differently elsewhere in the repository.</p>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>Use this directory to understand:</p>
+<h1 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h1>
+<p>The Admin Web Portal provides back-office administration, vendor onboarding approval, store catalog oversight, dispute moderation, and operational monitoring for platform operators.</p>
+<p>Initial drafts explored Next.js for web portals. However:
+1. The Admin Portal is an authenticated Single Page Application (SPA) with zero requirement for public Search Engine Optimization (SEO) or Server-Side Rendering (SSR).
+2. SSR in Next.js introduces extra server hosting infrastructure, cold starts, and complex deployment runtime boundaries compared to static assets.
+3. Vite provides superior local developer experience with instantaneous Hot Module Replacement (HMR) and optimized Rollup-based production builds.</p>
+<hr />
+<h1 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h1>
+<p>Develop the <strong>Admin Web Portal</strong> as a Single Page Application (SPA) using <strong>React</strong> bundled with <strong>Vite</strong>.</p>
+<p>Key technical standards include:</p>
 <ul>
-<li>business concepts</li>
-<li>actors and responsibilities</li>
-<li>business workflows</li>
-<li>entity lifecycle</li>
-<li>state transitions</li>
-<li>business constraints</li>
-<li>domain relationships</li>
-<li>operational business rules</li>
+<li><strong>TypeScript</strong> with strict mode.</li>
+<li><strong>Vite</strong> for build tooling, local dev server, and asset bundling.</li>
+<li><strong>Client-Side Routing</strong> via React Router / TanStack Router.</li>
+<li><strong>State &amp; Data Fetching</strong> via TanStack Query (React Query) or SWR communicating with the NestJS REST API.</li>
+<li><strong>Component System</strong>: Tailwind CSS, Shadcn UI / Radix UI primitives.</li>
+<li><strong>Hosting</strong>: Static distribution via CDN (Cloudflare, AWS CloudFront + S3, or Nginx).</li>
 </ul>
-<h2 id="documents">Documents<a class="headerlink" href="#documents" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Document</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="01-vision/"><code>01-vision.md</code></a></td>
-<td>Project vision and high-level objectives</td>
-</tr>
-<tr>
-<td><a href="02-scope/"><code>02-scope.md</code></a></td>
-<td>Project boundaries and scope definitions</td>
-</tr>
-<tr>
-<td><a href="03-goals/"><code>03-goals.md</code></a></td>
-<td>Specific business goals and success metrics</td>
-</tr>
-<tr>
-<td><a href="04-stakeholders/"><code>04-stakeholders.md</code></a></td>
-<td>Identification of key stakeholders</td>
-</tr>
-<tr>
-<td><a href="05-personas/"><code>05-personas.md</code></a></td>
-<td>Target user personas and their characteristics</td>
-</tr>
-<tr>
-<td><a href="06-user-journeys/"><code>06-user-journeys.md</code></a></td>
-<td>End-to-end user journeys and flows</td>
-</tr>
-<tr>
-<td><a href="07-business-rules/"><code>07-business-rules/</code></a></td>
-<td>Directory containing specific domain business rules</td>
-</tr>
-<tr>
-<td><a href="08-functional-requirements/"><code>08-functional-requirements.md</code></a></td>
-<td>Functional system requirements</td>
-</tr>
-<tr>
-<td><a href="09-non-functional-requirements/"><code>09-non-functional-requirements.md</code></a></td>
-<td>Non-functional requirements and constraints</td>
-</tr>
-<tr>
-<td><a href="10-use-cases/"><code>10-use-cases.md</code></a></td>
-<td>Detailed system use cases</td>
-</tr>
-<tr>
-<td><a href="11-glossary/"><code>11-glossary.md</code></a></td>
-<td>Business glossary and domain terminology</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Keep this table synchronized with the files in this directory.</p>
-</blockquote>
-<h2 id="using-business-documentation">Using Business Documentation<a class="headerlink" href="#using-business-documentation" title="Permanent link">&para;</a></h2>
-<p>Before implementing or modifying business behavior:</p>
-<ol>
-<li>Identify the affected business domain.</li>
-<li>Read the relevant document(s).</li>
-<li>Inspect the existing implementation.</li>
-<li>Follow the documented rules.</li>
-<li>Update the relevant documentation when business behavior changes.</li>
-</ol>
-<h2 id="source-of-truth">Source of Truth<a class="headerlink" href="#source-of-truth" title="Permanent link">&para;</a></h2>
-<p>Business documentation is authoritative for business behavior.</p>
-<p>If business documentation conflicts with implementation:</p>
-<p><strong>Do not guess.</strong></p>
-<p>Stop and request clarification.</p>
-<p>If a requested behavior is not documented and requires a business decision:</p>
-<p><strong>Stop and ask before implementing it.</strong></p>
-<h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">&para;</a></h2>
+<hr />
+<h1 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h1>
+<h2 id="positive">Positive<a class="headerlink" href="#positive" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Architecture: <code>../architecture/</code></li>
-<li>Engineering governance: <code>../engineering-governance/</code></li>
-<li>API documentation: <code>../../openapi/</code></li>
-<li>Diagrams: <code>../diagrams/</code></li>
-<li>Templates: <code>../templates/</code></li>
+<li><strong>Simplicity &amp; Performance</strong>: Lightning-fast local dev startup and HMR via native ES modules.</li>
+<li><strong>Deployment Efficiency</strong>: Compiles to pure static assets (<code>dist/</code>), deployable anywhere with zero Node.js server overhead and near-zero hosting cost.</li>
+<li><strong>Reduced Complexity</strong>: Eliminates SSR-related hydration mismatches, server actions lifecycle quirks, and node runtime vulnerabilities for internal admin operations.</li>
 </ul>
+<h2 id="negative">Negative<a class="headerlink" href="#negative" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Initial load includes the JS bundle (mitigated by route-based code splitting with <code>React.lazy</code>).</li>
+<li>No native SSR capabilities if public storefront capabilities were to be merged into this portal (which are intentionally separated in architecture).</li>
+</ul>
+<hr />
+<h1 id="alternatives-considered">Alternatives Considered<a class="headerlink" href="#alternatives-considered" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Next.js</strong>: Excellent for public SEO-facing marketing or e-commerce storefronts, but unnecessary complexity and hosting burden for an internal back-office admin portal.</li>
+<li><strong>Remix</strong>: Strong routing and form handling, but requires dedicated server runtimes.</li>
+</ul>
+<hr />
+<h1 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h1>
+<p>Accepted</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -6832,10 +6722,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

@@ -3613,10 +3613,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend-nodejsnestjs" class="md-nav__link">
+  <a href="#web-react-vite-backend-nestjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend (Node.js/NestJS)
+        Web (React + Vite) &amp; Backend (NestJS)
       
     </span>
   </a>
@@ -3624,10 +3624,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-flutterdart" class="md-nav__link">
+  <a href="#mobile-react-native-expo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile (Flutter/Dart)
+        Mobile (React Native / Expo)
       
     </span>
   </a>
@@ -3777,6 +3777,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -3956,7 +3960,7 @@
     
   
   
-    <span class="md-status md-status--Accepted"></span>
+    <span class="md-status md-status--Superseded"></span>
   
 
   
@@ -4192,6 +4196,76 @@
     
   
     ADR-010 Monorepo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-011-react-native-expo-mobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 React Native Expo Mobile
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-012-react-vite-admin-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 React Vite Admin Web
   
 
     
@@ -6660,10 +6734,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend-nodejsnestjs" class="md-nav__link">
+  <a href="#web-react-vite-backend-nestjs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend (Node.js/NestJS)
+        Web (React + Vite) &amp; Backend (NestJS)
       
     </span>
   </a>
@@ -6671,10 +6745,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-flutterdart" class="md-nav__link">
+  <a href="#mobile-react-native-expo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile (Flutter/Dart)
+        Mobile (React Native / Expo)
       
     </span>
   </a>
@@ -6724,17 +6798,17 @@
 <li><strong>Licensing</strong>: Only libraries with permissive open-source licenses (MIT, Apache 2.0, BSD) are allowed. GPL or similarly viral licenses are strictly prohibited.</li>
 </ol>
 <hr />
-<h2 id="backend-nodejsnestjs">Backend (Node.js/NestJS)<a class="headerlink" href="#backend-nodejsnestjs" title="Permanent link">&para;</a></h2>
+<h2 id="web-react-vite-backend-nestjs">Web (React + Vite) &amp; Backend (NestJS)<a class="headerlink" href="#web-react-vite-backend-nestjs" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use <code>npm</code> (or <code>yarn</code>/<code>pnpm</code> as defined in the root setup) consistently.</li>
-<li>Always lock dependency versions using <code>package-lock.json</code>.</li>
-<li>Keep <code>dependencies</code> (required for runtime) and <code>devDependencies</code> (required for build/test) strictly separated.</li>
+<li>Use <code>pnpm</code> (or <code>npm</code>) monorepo package management consistently.</li>
+<li>Always lock dependency versions with lockfiles (<code>pnpm-lock.yaml</code> or <code>package-lock.json</code>).</li>
+<li>Keep <code>dependencies</code> (runtime) and <code>devDependencies</code> (build/test/types) cleanly separated.</li>
 </ul>
-<h2 id="mobile-flutterdart">Mobile (Flutter/Dart)<a class="headerlink" href="#mobile-flutterdart" title="Permanent link">&para;</a></h2>
+<h2 id="mobile-react-native-expo">Mobile (React Native / Expo)<a class="headerlink" href="#mobile-react-native-expo" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use <code>pubspec.yaml</code> to manage dependencies.</li>
-<li>Ensure package versions are locked in <code>pubspec.lock</code>.</li>
-<li>Prefer official packages from <code>flutter.dev</code> or <code>dart.dev</code> where possible over third-party community packages.</li>
+<li>Use Expo CLI (<code>npx expo install &lt;package&gt;</code>) to install compatible package versions aligned with the active Expo SDK version.</li>
+<li>Avoid installing unverified native packages requiring custom native code linking without verifying compatibility with Expo config plugins.</li>
+<li>Ensure dependencies are locked and tracked within the monorepo workspace.</li>
 </ul>
 <hr />
 <h2 id="dependency-updates">Dependency Updates<a class="headerlink" href="#dependency-updates" title="Permanent link">&para;</a></h2>
