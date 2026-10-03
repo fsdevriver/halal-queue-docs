@@ -6907,15 +6907,16 @@
 <li>Order status is Ready for Pickup.</li>
 </ul>
 <p><strong>Main Flow</strong></p>
+<p>Current release (approved 2026-09-18):</p>
 <ol>
-<li>Customer provides the pickup code.</li>
-<li>Vendor enters or scans the pickup code.</li>
-<li>System validates the code.</li>
-<li>Order is marked as completed.</li>
+<li>Assigned vendor owner or staff confirms handover of a Ready for Pickup order.</li>
+<li>System checks store membership and the valid transition.</li>
+<li>Order is completed with an audit history entry.</li>
 </ol>
+<p>Pickup code entry and validation are deferred, per BR-ORD-016.</p>
 <p><strong>Alternative Flow</strong></p>
 <ul>
-<li>Pickup code is invalid.</li>
+<li>Actor is not assigned to the store, or the order is not ready for pickup.</li>
 </ul>
 <hr />
 <h1 id="uc-012-manage-business-profile">UC-012 Manage Business Profile<a class="headerlink" href="#uc-012-manage-business-profile" title="Permanent link">&para;</a></h1>
